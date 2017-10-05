@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.mynewdatabaseapp.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter task here"
+        android:textAlignment="center"
+        android:id="@+id/editTextTask"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add task"
+        android:id="@+id/ButtonAddTask"
+        android:onClick="addButtonClicked"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="remove task"
+        android:id="@+id/ButtonRemoveTask"
+        android:onClick="removeButtonClicked"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="No tasks added yet"
+        android:layout_marginTop="20dp"
+        android:id="@+id/textViewTask"
+        android:textSize="20dp"
+        />
+
+
+</LinearLayout>
